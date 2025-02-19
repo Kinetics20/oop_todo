@@ -78,23 +78,23 @@ class Task:
 
     __repr__ = __str__
 
-# t1 = Task('Improve python', datetime(2025, 2, 17, 12,39 ), 51,location='Home')
-# t2 = Task('Learn FastApi.', datetime(2025, 2, 5, 10, 5), 60,location='Home')
-# t1.toggle_status()
-#
-#
-# # print(t1.name)
+t1 = Task('Improve python', datetime(2025, 2, 27, 12,39 ), 51,location='Home')
+t2 = Task('Learn FastApi.', datetime(2025, 3, 5, 10, 5), 60,location='Home')
+t1.toggle_status()
+
+
+# print(t1.name)
 # print(t1)
 # print(t2)
 
-# if __name__ == '__main__':
-#     while True:
-#         name = input('Enter task name or type exit: ')
-#         if name == 'exit':
-#             break
-#         try:
-#             t = Task(name, '', '', '', '')
-#             print('Your task is ', t)
-#             break
-#         except ValueError as e:
-#             print(e)
+if __name__ == '__main__':
+    while True:
+        name = input('Enter task name or type exit: ')
+        if name == 'exit':
+            break
+        try:
+            t = Task(name, '', '', '', '')
+            print('Your task is ', t)
+            break
+        except ValueError as e:
+            print(e)

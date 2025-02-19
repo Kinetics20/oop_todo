@@ -76,9 +76,9 @@ class TaskList:
 
 
 
-t1 = Task('Improve python', datetime(2025, 2, 17, 12, 39), 51, location='Home', description='Learn quickly')
+t1 = Task('Improve python', datetime(2025, 2, 22, 12, 39), 51, location='Home', description='Learn quickly')
 t2 = Task('Learn FastApi.', datetime(2025, 3, 17, 14, 5), 60, location='Home')
-t3 = Task('Learn Docker', datetime(2025, 2, 17, 10, 5), 60, location='Home')
+t3 = Task('Learn Docker', datetime(2025, 2, 21, 10, 5), 60, location='Home')
 
 t2.status = StatusEnum.COMPLETED
 
@@ -87,7 +87,7 @@ tl = TaskList([t1, t2, t3])
 
 
 # pp(tl.tasks)
-# tl.show_tasks_by_date()
+tl.show_tasks_by_date()
 # pp(tl.show_tasks_by_date(date(2025, 2, 17)))
 # pp(tl.show_tasks_by_status('done'))
 # pp(tl.find_tasks('learn'))
