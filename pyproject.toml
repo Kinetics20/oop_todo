@@ -1,17 +1,16 @@
-[tool.poetry]
+[project]
 name = "oop-todo"
 version = "0.1.0"
-description = ""
-authors = ["Kinetics20 <kinetics20@gmail.com>"]
+description = "Mini project todo for python oop programming practising"
+authors = ["Piotr Lipinski <kinetics20@gmail.com>"]
+license = "Beerware"
 readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.12"
-
-
-[tool.poetry.group.dev.dependencies]
-mypy = "^1.14.1"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+]
